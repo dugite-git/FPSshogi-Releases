@@ -1,0 +1,23 @@
+title: "[感想・バランス] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        楽しかった点、使いづらかった点、強すぎる・弱すぎると感じた駒などを教えてください。短い感想だけでも投稿できます。
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 遊んだ感想
+      placeholder: "例：槍をためて当てる手応えは良かったが、近すぎて外れたことが分かりづらかった。"
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: バージョン・駒・モード（任意）
+      placeholder: "例：v0.17.2／歩と香車／オフライン"
+  - type: textarea
+    id: situation
+    attributes:
+      label: そう感じた場面・画像や動画（任意）
+      description: 相手の駒や距離、使ったスキルなどが分かると、調整の参考になります。

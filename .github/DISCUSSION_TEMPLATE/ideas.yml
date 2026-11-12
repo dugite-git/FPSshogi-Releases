@@ -1,0 +1,22 @@
+title: "[改善案] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        操作・画面・音・ルール・駒の能力などの改善案を投稿できます。具体的な解決方法が決まっていなくても構いません。
+  - type: textarea
+    id: need
+    attributes:
+      label: 不便なこと・こうなってほしいこと
+      placeholder: "例：決闘中に、残っているスキルの回数をもっと見分けやすくしてほしい。"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 改善案や参考例（任意）
+      description: 考えた案や参考ゲーム、画像・URLなどがあれば記入してください。
+  - type: input
+    id: context
+    attributes:
+      label: 関係する画面・駒・バージョン（任意）

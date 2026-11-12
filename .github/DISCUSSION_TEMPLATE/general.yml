@@ -1,0 +1,55 @@
+title: "[不具合] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        FPS将棋の不具合を報告できます。原因が分からなくても大丈夫です。同じ症状の投稿があれば、その投稿へのコメントでも構いません。
+  - type: input
+    id: version
+    attributes:
+      label: 遊んだバージョン
+      description: ダウンロードしたリリースの版を記入してください。不明なら「不明」で構いません。
+      placeholder: "例：v0.17.2"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 起きたこと
+      description: どの画面・駒・スキルで、何がおかしかったかを教えてください。
+      placeholder: "例：飛車で縄を引いた後、弓を引く動きが戻らなくなった。"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順と、本来どうなると思ったか
+      description: 覚えている範囲で構いません。毎回起きるか、一度だけかも分かれば記入してください。
+      placeholder: |
+        1. 
+        2. 
+        本来の動き：
+        起きる頻度：
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 遊んでいたモード
+      multiple: true
+      options:
+        - 通常将棋・オンライン
+        - 通常将棋・オフライン
+        - 5五将棋・オンライン
+        - 5五将棋・オフライン
+        - 練習場
+        - タイトル・設定など
+        - 不明
+  - type: input
+    id: controls
+    attributes:
+      label: 操作機器・対戦時の役割（任意）
+      placeholder: "例：コントローラー／オンラインの参加側、キーボード・マウス／部屋を作った側"
+  - type: textarea
+    id: media
+    attributes:
+      label: 画像・動画・補足（任意）
+      description: 画像や短い動画を貼れます。PC環境やエラー表示が分かれば併記してください。名前や通知など、公開したくない部分は隠してください。

@@ -1,0 +1,22 @@
+title: "[質問] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        起動・オンライン接続・操作・ルールなど、分からないことを質問できます。解決したら、役に立った返信を「Mark as answer」で回答として選べます。
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問したいこと
+      placeholder: "どの画面で、何をしようとして困ったかを書いてください。"
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: バージョン・モード・操作機器（任意）
+  - type: textarea
+    id: tried
+    attributes:
+      label: 試したこと・表示されたメッセージ（任意）
+      description: 画像も添付できます。
