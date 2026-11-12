@@ -23,9 +23,9 @@ GitHubにログインすれば、どなたでも投稿・返信できます。�
 
 | 投稿したい内容 | 投稿先 |
 | --- | --- |
-| 不具合報告 | [General](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=general) |
-| 感想・バランス | [Show and tell](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=show-and-tell) |
-| 改善案 | [Ideas](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=ideas) |
-| 操作・起動・ルールなどの質問 | [Q&A](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=q-a) |
+| 不具合報告 | [不具合報告](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=%E4%B8%8D%E5%85%B7%E5%90%88%E5%A0%B1%E5%91%8A) |
+| 感想・バランス | [感想・バランス](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=%E6%84%9F%E6%83%B3-%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B9) |
+| 改善案 | [改善案](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=%E6%94%B9%E5%96%84%E6%A1%88) |
+| 操作・起動・ルールなどの質問 | [質問](https://github.com/dugite-git/FPSshogi-Releases/discussions/new?category=%E8%B3%AA%E5%95%8F) |
 
 不具合は遊んだバージョンと症状を記入してください。手順や画像・動画は、分かる範囲で添えれば大丈夫です。短い感想も歓迎します。
