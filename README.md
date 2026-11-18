@@ -14,6 +14,10 @@ Windows PCで[最新版のZIP](https://github.com/dugite-git/FPSshogi-Releases/r
 
 > **オンライン対戦の注意**：異なるバージョン同士では対戦できません。2人とも同じリリースのWindows版ZIPを使ってください。迷ったら、両方とも上のリンクから最新版をダウンロードしてください。
 
+## 実況・配信について
+
+FPS将棋の実況・配信・動画や画像の投稿は、個人・法人を問わず、収益化も含めて自由です。許可申請・連絡・クレジット表記は不要です。
+
 ## フィードバック
 
 GitHubにログインし、[Discussions](https://github.com/dugite-git/FPSshogi-Releases/discussions)に不具合・感想・改善案を投稿してください。不具合には、遊んだバージョンと何が起きたかを書いてください。[投稿方法の案内](https://github.com/dugite-git/FPSshogi-Releases/discussions/1)
