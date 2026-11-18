@@ -17,3 +17,10 @@ Windows PCで[最新版のZIP](https://github.com/dugite-git/FPSshogi-Releases/r
 ## フィードバック
 
 GitHubにログインし、[Discussions](https://github.com/dugite-git/FPSshogi-Releases/discussions)に不具合・感想・改善案を投稿してください。不具合には、遊んだバージョンと何が起きたかを書いてください。[投稿方法の案内](https://github.com/dugite-git/FPSshogi-Releases/discussions/1)
+
+## 連絡先
+
+GreedyForkStudio
+
+- メール: [greedyforkstudio@gmail.com](mailto:greedyforkstudio@gmail.com)
+- X: [@GreedyForkDev](https://x.com/GreedyForkDev)
