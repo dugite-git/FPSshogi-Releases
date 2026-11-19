@@ -52,6 +52,15 @@ Interface: renderer CLI `--data-dir PATH`; reads Task 1 outputs and writes `tren
 ## Task 3: Publish and Verify
 
 - [x] Fresh independent code review of collector, reporting, and workflow.
-- [ ] Publish the verified files to main through the authorized GitHub connector, preserving the latest branch head.
-- [ ] Observe an actual successful Actions run and the resulting history commit; confirm schedule, CSV rows, and report links.
-- [ ] Report schedule and direct links; distinguish a configured workflow from a verified successful run if blocked.
+- [x] Publish the verified files to main through the authorized GitHub connector, preserving the latest branch head.
+- [x] Observe an actual successful Actions run and the resulting history commit; confirm schedule, CSV rows, and report links.
+- [x] Report schedule and direct links; distinguish a configured workflow from a verified successful run if blocked.
+
+## Verification record
+
+- Local full suite: 20 tests passed; staged diff whitespace check passed.
+- Fresh independent review: no critical or important findings.
+- Real API baseline: 31 Windows ZIP assets, 121 cumulative downloads at 2026-11-19 17:24:23 JST.
+- Hosted workflow run [44488150347](https://github.com/dugite-git/FPSshogi-Releases/actions/runs/44488150347) completed successfully at 2026-11-19 17:30:41 JST. Tests, live collection, report generation and authenticated Git push all succeeded.
+- Saved CSV confirmed a second observation at 17:30:35 JST, total 121, interval increase 0.
+- Root README links to the separate stats/downloads/trends.md page; charts are not embedded in the root README.
