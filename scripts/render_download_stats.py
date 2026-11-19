@@ -46,7 +46,7 @@ def chart_svg(title, subtitle, labels, values, *, bars=False, times=None):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         f'<title id="title">{escape(title)}</title>',
-        f'<desc id="desc">{escape(subtitle)}。単位はダウンロード回数。未計測はゼロとして描画しません。</desc>',
+        f'<desc id="desc">{escape(subtitle)}。単位：ダウンロード回数。</desc>',
         '<rect width="960" height="340" rx="12" fill="#f8fafc"/>',
         '<g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif" fill="#172554">',
         f'<text x="28" y="34" font-size="20" font-weight="700">{escape(title)}</text>',
@@ -99,7 +99,7 @@ def chart_svg(title, subtitle, labels, values, *, bars=False, times=None):
         for index in tick_indices:
             anchor = "start" if xs[index] <= left + 20 else "end" if xs[index] >= right - 20 else "middle"
             parts.append(f'<text x="{xs[index]:.2f}" y="{bottom + 24}" text-anchor="{anchor}" font-size="11">{escape(labels[index])}</text>')
-    footer = "確認日（日本時間）／ — は初回基準値のみ、または未観測" if bars else "観測日時（日本時間）／点が実測値、線は観測点を結んだもの"
+    footer = "確認日（日本時間）／ —：未計測" if bars else "観測日時（日本時間）"
     parts.append(f'<text x="28" y="322" font-size="12" fill="#475569">{escape(footer)}</text>')
     parts.append("</g></svg>\n")
     return "\n".join(parts)
@@ -126,59 +126,42 @@ def render(data_dir):
     labels = [datetime.fromisoformat(row["observed_at_jst"]).strftime("%m/%d %H:%M") for row in history]
     times = [datetime.fromisoformat(row["observed_at_utc"].replace("Z", "+00:00")).timestamp() for row in history]
     cumulative = chart_svg(
-        "累計ダウンロード数", f"Windows版ZIP・保存済みの削除前件数を含む累計／観測 {len(history):,}回",
+        "累計ダウンロード数", f"Windows版・記録済み累計／観測 {len(history):,}回",
         labels, [int(row["total_downloads"]) for row in history], times=times,
     )
     recent_days = daily[-90:]
     daily_chart = chart_svg(
-        "確認日別の増加数", "直近90日・取得区間の増加を確認日に集計（実際のダウンロード日別ではありません）",
+        "確認日別の増加数", "直近90日・確認日基準",
         [row["date_jst"][5:].replace("-", "/") for row in recent_days],
         [row["new_downloads"] for row in recent_days], bars=True,
     )
     (data_dir / "cumulative.svg").write_text(cumulative, encoding="utf-8")
     (data_dir / "daily.svg").write_text(daily_chart, encoding="utf-8")
-    delta = f"{int(last['new_downloads']):,}回" if last["new_downloads"] != "" else "—（初回の基準値）"
+    delta = f"{int(last['new_downloads']):,}回" if last["new_downloads"] != "" else "—"
     repo_url = "https://github.com/" + state["repository"]
     updated = datetime.fromisoformat(last["observed_at_jst"]).strftime("%Y-%m-%d %H:%M:%S")
     lines = [
-        "# FPS将棋 ダウンロード数の推移", "",
-        "[ゲームの案内](../../README.md) · [集計ワークフロー](../../.github/workflows/download-stats.yml) · "
-        f"[実行履歴・手動実行]({repo_url}/actions/workflows/download-stats.yml)", "",
-        f"最終観測: **{updated}（日本時間）**。予定時刻は毎日 **01:17・09:17・17:17** です。実行が遅れた場合は実際の取得時刻を記録します。", "",
-        "対象は公開リリース（プレリリースを含む）の `FPSshogi-Windows.zip` です。件数はダウンロード回数で、利用者数ではありません。", "",
-        "| 指標 | 回数・件数 |", "| --- | ---: |",
-        f"| 保存済み累計（削除されたファイルの最後の観測値を含む） | **{int(last['total_downloads']):,}回** |",
-        f"| 現在公開中のファイルの累計 | {int(last['active_downloads']):,}回 |",
-        f"| 前回観測からの増加 | {delta} |",
-        f"| 公開中の対象リリース / ファイル | {last['release_count']} / {last['asset_count']}件 |",
-        f"| 削除・非公開になった保存済みファイル | {last['archived_asset_count']}件 |", "",
+        "# FPS将棋 ダウンロード統計", "",
+        f"最終更新：{updated}（日本時間）", "",
+        "| 指標 | 数値 |", "| --- | ---: |",
+        f"| 記録済み累計 | **{int(last['total_downloads']):,}回** |",
+        f"| 公開中ファイルの累計 | {int(last['active_downloads']):,}回 |",
+        f"| 前回からの増加 | {delta} |",
+        f"| 対象リリース数 | {last['release_count']}件 |", "",
         "## グラフ", "",
         "![累計ダウンロード数](cumulative.svg)", "", "![確認日別の増加数](daily.svg)", "",
-        "初回の累計は基準値です。それ以前のダウンロードを初日の増加数には加えません。初回しか観測していない日は空欄になります。", "",
-        "増加数は前回の取得から今回の取得までの差を、今回の確認日（日本時間）にまとめています。深夜をまたぐ区間や実行失敗後の区間も含むため、実際にダウンロードされた日ごとの厳密な内訳ではありません。実行失敗・未観測の日を0回として補完しません。", "",
-        "## 最近の観測", "", "| 観測日時（日本時間） | 保存済み累計 | 前回からの増加 |", "| --- | ---: | ---: |",
+        "## 最近の推移", "", "| 日時（日本時間） | 累計 | 増加 |", "| --- | ---: | ---: |",
     ]
     for row in reversed(history[-15:]):
         stamp = datetime.fromisoformat(row["observed_at_jst"]).strftime("%Y-%m-%d %H:%M:%S")
         increment = f"{int(row['new_downloads']):,}" if row["new_downloads"] != "" else "—"
         lines.append(f"| {stamp} | {int(row['total_downloads']):,} | {increment} |")
-    lines.extend(["", "## バージョン別の最新観測値", "", "| バージョン | ダウンロード数 | 状態 |", "| --- | ---: | --- |"])
+    lines.extend(["", "## バージョン別", "", "| バージョン | ダウンロード数 | 状態 |", "| --- | ---: | --- |"])
     for asset in sorted(state["assets"].values(), key=lambda item: (int(item["release_id"]), item["tag"]), reverse=True):
         link = repo_url + "/releases/tag/" + quote(asset["tag"], safe="")
-        status = "公開中" if asset["active"] else "削除・非公開（最終観測値）"
+        status = "公開中" if asset["active"] else "非公開"
         lines.append(f"| [{md(asset['tag'])}]({link}) | {int(asset['download_count']):,} | {status} |")
-    lines.extend([
-        "", "## データと記録方法", "",
-        "- [観測ごとの集計CSV](history.csv): UTC・日本時間の観測時刻、累計、前回との差など。",
-        "- [アセットID別の観測CSV](assets.csv): 各バージョンの配布ファイルごとの履歴。",
-        "- [確認日別の増加CSV](daily.csv): 観測区間の増加を確認日でまとめたもの。",
-        "- [最終状態JSON](state.json): ファイルの削除・差し替え後も前回値を保持するための状態。", "",
-        "アセットIDで同じファイルを識別します。削除・非公開になったファイルの最後の観測値は保存済み累計に残し、別IDで再アップロードされたファイルは追加します。観測の間に削除されたファイルの未取得分は復元できません。同じIDの件数が減少した場合は異常として処理を停止します。", "",
-        "API取得や検証に失敗した回は履歴を更新しません。同じActions実行の再実行では観測を二重に追記しません。生成物はGitのコミットとして保存し、Actions artifactsの保存期限に依存しません。", "",
-        "GitHub Actionsの定期実行には遅延があり、公開リポジトリでは60日間活動がない場合に無効化されることがあります。最終観測時刻が古い場合は実行履歴を確認してください。", "",
-        "手動更新: Actions → **Record release downloads** → **Run workflow**（main）。個人アクセストークンの追加設定は不要です。", "",
-        "仕様: [GitHub Releases API](https://docs.github.com/en/rest/releases/assets) / [Actionsのschedule](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)", "",
-    ])
+    lines.append("")
     (data_dir / "trends.md").write_text("\n".join(lines), encoding="utf-8")
 
 

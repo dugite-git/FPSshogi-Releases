@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
 <title id="title">確認日別の増加数</title>
-<desc id="desc">直近90日・取得区間の増加を確認日に集計（実際のダウンロード日別ではありません）。単位はダウンロード回数。未計測はゼロとして描画しません。</desc>
+<desc id="desc">直近90日・確認日基準。単位：ダウンロード回数。</desc>
 <rect width="960" height="340" rx="12" fill="#f8fafc"/>
 <g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif" fill="#172554">
 <text x="28" y="34" font-size="20" font-weight="700">確認日別の増加数</text>
-<text x="28" y="59" font-size="12" fill="#475569">直近90日・取得区間の増加を確認日に集計（実際のダウンロード日別ではありません）</text>
+<text x="28" y="59" font-size="12" fill="#475569">直近90日・確認日基準</text>
 <line x1="76" y1="265.00" x2="922" y2="265.00" stroke="#dbe4ee"/>
 <text x="64" y="269.00" text-anchor="end" font-size="12">0</text>
 <line x1="76" y1="228.40" x2="922" y2="228.40" stroke="#dbe4ee"/>
@@ -21,5 +21,5 @@
 <rect x="474.00" y="265.00" width="50.00" height="1.00" rx="2" fill="#0f766e"><title>11/19: 0回</title></rect>
 <text x="499.00" y="257.00" text-anchor="middle" font-size="12">0</text>
 <text x="499.00" y="289" text-anchor="middle" font-size="11">11/19</text>
-<text x="28" y="322" font-size="12" fill="#475569">確認日（日本時間）／ — は初回基準値のみ、または未観測</text>
+<text x="28" y="322" font-size="12" fill="#475569">確認日（日本時間）／ —：未計測</text>
 </g></svg>
