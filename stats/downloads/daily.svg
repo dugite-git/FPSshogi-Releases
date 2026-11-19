@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+<title id="title">確認日別の増加数</title>
+<desc id="desc">直近90日・取得区間の増加を確認日に集計（実際のダウンロード日別ではありません）。単位はダウンロード回数。未計測はゼロとして描画しません。</desc>
+<rect width="960" height="340" rx="12" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif" fill="#172554">
+<text x="28" y="34" font-size="20" font-weight="700">確認日別の増加数</text>
+<text x="28" y="59" font-size="12" fill="#475569">直近90日・取得区間の増加を確認日に集計（実際のダウンロード日別ではありません）</text>
+<line x1="76" y1="265.00" x2="922" y2="265.00" stroke="#dbe4ee"/>
+<text x="64" y="269.00" text-anchor="end" font-size="12">0</text>
+<line x1="76" y1="228.40" x2="922" y2="228.40" stroke="#dbe4ee"/>
+<text x="64" y="232.40" text-anchor="end" font-size="12">1</text>
+<line x1="76" y1="191.80" x2="922" y2="191.80" stroke="#dbe4ee"/>
+<text x="64" y="195.80" text-anchor="end" font-size="12">2</text>
+<line x1="76" y1="155.20" x2="922" y2="155.20" stroke="#dbe4ee"/>
+<text x="64" y="159.20" text-anchor="end" font-size="12">3</text>
+<line x1="76" y1="118.60" x2="922" y2="118.60" stroke="#dbe4ee"/>
+<text x="64" y="122.60" text-anchor="end" font-size="12">4</text>
+<line x1="76" y1="82.00" x2="922" y2="82.00" stroke="#dbe4ee"/>
+<text x="64" y="86.00" text-anchor="end" font-size="12">5</text>
+<text x="64" y="70" text-anchor="end" font-size="12">回</text>
+<text x="499.00" y="260" text-anchor="middle" font-size="12" fill="#64748b">—</text>
+<text x="499.00" y="289" text-anchor="middle" font-size="11">11/19</text>
+<text x="28" y="322" font-size="12" fill="#475569">確認日（日本時間）／ — は初回基準値のみ、または未観測</text>
+</g></svg>

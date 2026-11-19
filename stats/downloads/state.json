@@ -1,0 +1,285 @@
+{
+  "assets": {
+    "732550562": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 440768120,
+      "tag": "v0.17.1"
+    },
+    "732684512": {
+      "active": true,
+      "download_count": 8,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 440819346,
+      "tag": "v0.17.2"
+    },
+    "742358488": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 443839160,
+      "tag": "v0.18.0"
+    },
+    "742971673": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 444011269,
+      "tag": "v0.18.1"
+    },
+    "743190220": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 444081391,
+      "tag": "v0.18.2"
+    },
+    "743281311": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 444110736,
+      "tag": "v0.18.3"
+    },
+    "743588928": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 444206237,
+      "tag": "v0.18.4"
+    },
+    "743658238": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 444228223,
+      "tag": "v0.18.5"
+    },
+    "746504722": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 445061444,
+      "tag": "v0.18.6"
+    },
+    "747252217": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 445239580,
+      "tag": "v0.18.7"
+    },
+    "748335655": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 445490945,
+      "tag": "v0.18.8"
+    },
+    "749938627": {
+      "active": true,
+      "download_count": 7,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 445832058,
+      "tag": "v0.18.9"
+    },
+    "751002457": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446060615,
+      "tag": "v0.18.10"
+    },
+    "751121342": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446087454,
+      "tag": "v0.18.11"
+    },
+    "751348619": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446138967,
+      "tag": "v0.18.12"
+    },
+    "751433813": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446158582,
+      "tag": "v0.18.13"
+    },
+    "753199316": {
+      "active": true,
+      "download_count": 4,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446552530,
+      "tag": "v0.18.14"
+    },
+    "753222925": {
+      "active": true,
+      "download_count": 6,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446558219,
+      "tag": "v0.18.15"
+    },
+    "753395763": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446596562,
+      "tag": "v0.18.16"
+    },
+    "753499357": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446619103,
+      "tag": "v0.18.17"
+    },
+    "753637672": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446652761,
+      "tag": "v0.18.18"
+    },
+    "753703210": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446669676,
+      "tag": "v0.18.19"
+    },
+    "753756264": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446683236,
+      "tag": "v0.18.20"
+    },
+    "753942330": {
+      "active": true,
+      "download_count": 4,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446733821,
+      "tag": "v0.18.21"
+    },
+    "754043827": {
+      "active": true,
+      "download_count": 4,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446765400,
+      "tag": "v0.18.22"
+    },
+    "754089086": {
+      "active": true,
+      "download_count": 7,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446779251,
+      "tag": "v0.18.23"
+    },
+    "754275869": {
+      "active": true,
+      "download_count": 6,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 446840115,
+      "tag": "v0.18.24"
+    },
+    "758458535": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 448410845,
+      "tag": "v0.18.25"
+    },
+    "759077584": {
+      "active": true,
+      "download_count": 2,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 448634637,
+      "tag": "v0.19.0"
+    },
+    "759174464": {
+      "active": true,
+      "download_count": 3,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 448669179,
+      "tag": "v0.19.1"
+    },
+    "759318124": {
+      "active": true,
+      "download_count": 5,
+      "first_seen_at": "2026-11-19T08:24:23Z",
+      "last_seen_at": "2026-11-19T08:24:23Z",
+      "name": "FPSshogi-Windows.zip",
+      "release_id": 448723254,
+      "tag": "v0.19.2"
+    }
+  },
+  "repository": "dugite-git/FPSshogi-Releases",
+  "schema_version": 1
+}

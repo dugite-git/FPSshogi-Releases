@@ -28,3 +28,7 @@ GreedyForkStudio
 
 - メール: [greedyforkstudio@gmail.com](mailto:greedyforkstudio@gmail.com)
 - X: [@GreedyForkDev](https://x.com/GreedyForkDev)
+
+## ダウンロード数の推移
+
+[ダウンロード数の推移・グラフを見る](stats/downloads/trends.md)

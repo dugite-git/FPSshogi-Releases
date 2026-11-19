@@ -1,0 +1,79 @@
+name: Record release downloads
+
+on:
+  schedule:
+    # UTC -> JST 01:17, 09:17, 17:17. Actual starts may be delayed by GitHub.
+    - cron: '17 0,8,16 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/download-stats.yml'
+      - 'scripts/collect_download_stats.py'
+      - 'scripts/render_download_stats.py'
+      - 'tests/test_*download_stats.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-download-stats
+  cancel-in-progress: false
+
+jobs:
+  record:
+    if: github.repository == 'dugite-git/FPSshogi-Releases' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out current history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Test collector and reports
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Collect a complete observation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          python3 scripts/collect_download_stats.py
+          --repository "$GITHUB_REPOSITORY"
+          --data-dir stats/downloads
+          --run-key "actions:$GITHUB_RUN_ID"
+
+      - name: Update report and charts
+        run: python3 scripts/render_download_stats.py --data-dir stats/downloads
+
+      - name: Save history
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- stats/downloads/history.csv stats/downloads/assets.csv stats/downloads/state.json stats/downloads/daily.csv stats/downloads/trends.md stats/downloads/cumulative.svg stats/downloads/daily.svg
+          if git diff --cached --quiet; then
+            echo 'This run is already recorded; nothing to save.'
+            exit 0
+          fi
+          git commit -m 'stats: record release download counts'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep 5
+            fi
+          done
+          echo 'Could not save history after three attempts.' >&2
+          exit 1
+
+      - name: Link the saved report
+        run: |
+          echo '## Download history saved' >> "$GITHUB_STEP_SUMMARY"
+          echo '[View the history and charts](https://github.com/dugite-git/FPSshogi-Releases/blob/main/stats/downloads/trends.md)' >> "$GITHUB_STEP_SUMMARY"
