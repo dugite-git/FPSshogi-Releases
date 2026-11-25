@@ -1,45 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
 <title id="title">累計ダウンロード数</title>
-<desc id="desc">Windows版・記録済み累計／観測 15回。単位：ダウンロード回数。</desc>
+<desc id="desc">Windows版・記録済み累計／観測 16回。単位：ダウンロード回数。</desc>
 <rect width="960" height="340" rx="12" fill="#f8fafc"/>
 <g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif" fill="#172554">
 <text x="28" y="34" font-size="20" font-weight="700">累計ダウンロード数</text>
-<text x="28" y="59" font-size="12" fill="#475569">Windows版・記録済み累計／観測 15回</text>
+<text x="28" y="59" font-size="12" fill="#475569">Windows版・記録済み累計／観測 16回</text>
 <line x1="76" y1="265.00" x2="922" y2="265.00" stroke="#dbe4ee"/>
 <text x="64" y="269.00" text-anchor="end" font-size="12">0</text>
 <line x1="76" y1="228.40" x2="922" y2="228.40" stroke="#dbe4ee"/>
-<text x="64" y="232.40" text-anchor="end" font-size="12">33</text>
+<text x="64" y="232.40" text-anchor="end" font-size="12">34</text>
 <line x1="76" y1="191.80" x2="922" y2="191.80" stroke="#dbe4ee"/>
-<text x="64" y="195.80" text-anchor="end" font-size="12">66</text>
+<text x="64" y="195.80" text-anchor="end" font-size="12">68</text>
 <line x1="76" y1="155.20" x2="922" y2="155.20" stroke="#dbe4ee"/>
-<text x="64" y="159.20" text-anchor="end" font-size="12">99</text>
+<text x="64" y="159.20" text-anchor="end" font-size="12">102</text>
 <line x1="76" y1="118.60" x2="922" y2="118.60" stroke="#dbe4ee"/>
-<text x="64" y="122.60" text-anchor="end" font-size="12">132</text>
+<text x="64" y="122.60" text-anchor="end" font-size="12">136</text>
 <line x1="76" y1="82.00" x2="922" y2="82.00" stroke="#dbe4ee"/>
-<text x="64" y="86.00" text-anchor="end" font-size="12">165</text>
+<text x="64" y="86.00" text-anchor="end" font-size="12">170</text>
 <text x="64" y="70" text-anchor="end" font-size="12">回</text>
-<polyline points="76.00,130.80 76.64,130.80 78.18,130.80 167.11,130.80 218.95,128.58 278.15,127.47 367.11,125.25 422.00,125.25 456.04,125.25 513.89,125.25 571.84,117.49 667.72,113.05 745.10,113.05 830.17,110.84 922.00,109.73" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<circle cx="76.00" cy="130.80" r="4" fill="#2563eb"><title>11/19 17:24: 121回</title></circle>
-<circle cx="76.64" cy="130.80" r="4" fill="#2563eb"><title>11/19 17:30: 121回</title></circle>
-<circle cx="78.18" cy="130.80" r="4" fill="#2563eb"><title>11/19 17:45: 121回</title></circle>
-<circle cx="167.11" cy="130.80" r="4" fill="#2563eb"><title>11/20 08:06: 121回</title></circle>
-<circle cx="218.95" cy="128.58" r="4" fill="#2563eb"><title>11/20 16:27: 123回</title></circle>
-<circle cx="278.15" cy="127.47" r="4" fill="#2563eb"><title>11/21 02:00: 124回</title></circle>
-<circle cx="367.11" cy="125.25" r="4" fill="#2563eb"><title>11/21 16:21: 126回</title></circle>
-<circle cx="422.00" cy="125.25" r="4" fill="#2563eb"><title>11/22 01:12: 126回</title></circle>
-<circle cx="456.04" cy="125.25" r="4" fill="#2563eb"><title>11/22 06:42: 126回</title></circle>
-<circle cx="513.89" cy="125.25" r="4" fill="#2563eb"><title>11/22 16:01: 126回</title></circle>
-<circle cx="571.84" cy="117.49" r="4" fill="#2563eb"><title>11/23 01:22: 133回</title></circle>
-<circle cx="667.72" cy="113.05" r="4" fill="#2563eb"><title>11/23 16:50: 137回</title></circle>
-<circle cx="745.10" cy="113.05" r="4" fill="#2563eb"><title>11/24 05:19: 137回</title></circle>
-<circle cx="830.17" cy="110.84" r="4" fill="#2563eb"><title>11/24 19:02: 139回</title></circle>
-<circle cx="922.00" cy="109.73" r="4" fill="#2563eb"><title>11/25 09:51: 140回</title></circle>
-<text x="922.00" y="97.73" text-anchor="end" font-size="14" font-weight="700">140</text>
+<polyline points="76.00,134.75 76.57,134.75 77.93,134.75 156.58,134.75 202.43,132.59 254.79,131.52 333.47,129.36 382.02,129.36 412.12,129.36 463.29,129.36 514.54,121.83 599.34,117.52 667.78,117.52 743.01,115.37 824.24,114.29 922.00,108.91" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="76.00" cy="134.75" r="4" fill="#2563eb"><title>11/19 17:24: 121回</title></circle>
+<circle cx="76.57" cy="134.75" r="4" fill="#2563eb"><title>11/19 17:30: 121回</title></circle>
+<circle cx="77.93" cy="134.75" r="4" fill="#2563eb"><title>11/19 17:45: 121回</title></circle>
+<circle cx="156.58" cy="134.75" r="4" fill="#2563eb"><title>11/20 08:06: 121回</title></circle>
+<circle cx="202.43" cy="132.59" r="4" fill="#2563eb"><title>11/20 16:27: 123回</title></circle>
+<circle cx="254.79" cy="131.52" r="4" fill="#2563eb"><title>11/21 02:00: 124回</title></circle>
+<circle cx="333.47" cy="129.36" r="4" fill="#2563eb"><title>11/21 16:21: 126回</title></circle>
+<circle cx="382.02" cy="129.36" r="4" fill="#2563eb"><title>11/22 01:12: 126回</title></circle>
+<circle cx="412.12" cy="129.36" r="4" fill="#2563eb"><title>11/22 06:42: 126回</title></circle>
+<circle cx="463.29" cy="129.36" r="4" fill="#2563eb"><title>11/22 16:01: 126回</title></circle>
+<circle cx="514.54" cy="121.83" r="4" fill="#2563eb"><title>11/23 01:22: 133回</title></circle>
+<circle cx="599.34" cy="117.52" r="4" fill="#2563eb"><title>11/23 16:50: 137回</title></circle>
+<circle cx="667.78" cy="117.52" r="4" fill="#2563eb"><title>11/24 05:19: 137回</title></circle>
+<circle cx="743.01" cy="115.37" r="4" fill="#2563eb"><title>11/24 19:02: 139回</title></circle>
+<circle cx="824.24" cy="114.29" r="4" fill="#2563eb"><title>11/25 09:51: 140回</title></circle>
+<circle cx="922.00" cy="108.91" r="4" fill="#2563eb"><title>11/26 03:40: 145回</title></circle>
+<text x="922.00" y="96.91" text-anchor="end" font-size="14" font-weight="700">145</text>
 <text x="76.00" y="289" text-anchor="start" font-size="11">11/19 17:24</text>
-<text x="167.11" y="289" text-anchor="middle" font-size="11">11/20 08:06</text>
-<text x="367.11" y="289" text-anchor="middle" font-size="11">11/21 16:21</text>
-<text x="456.04" y="289" text-anchor="middle" font-size="11">11/22 06:42</text>
-<text x="667.72" y="289" text-anchor="middle" font-size="11">11/23 16:50</text>
-<text x="922.00" y="289" text-anchor="end" font-size="11">11/25 09:51</text>
+<text x="156.58" y="289" text-anchor="middle" font-size="11">11/20 08:06</text>
+<text x="333.47" y="289" text-anchor="middle" font-size="11">11/21 16:21</text>
+<text x="463.29" y="289" text-anchor="middle" font-size="11">11/22 16:01</text>
+<text x="667.78" y="289" text-anchor="middle" font-size="11">11/24 05:19</text>
+<text x="922.00" y="289" text-anchor="end" font-size="11">11/26 03:40</text>
 <text x="28" y="322" font-size="12" fill="#475569">観測日時（日本時間）</text>
 </g></svg>
