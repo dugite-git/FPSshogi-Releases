@@ -1,13 +1,13 @@
 # FPS将棋 ダウンロード統計
 
-最終更新：2026-11-27 09:39:32（日本時間）
+最終更新：2026-11-28 03:15:41（日本時間）
 
 | 指標 | 数値 |
 | --- | ---: |
-| 記録済み累計 | **156回** |
-| 公開中ファイルの累計 | 156回 |
-| 前回からの増加 | 8回 |
-| 対象リリース数 | 38件 |
+| 記録済み累計 | **165回** |
+| 公開中ファイルの累計 | 165回 |
+| 前回からの増加 | 9回 |
+| 対象リリース数 | 40件 |
 
 ## グラフ
 
@@ -19,6 +19,7 @@
 
 | 日時（日本時間） | 累計 | 増加 |
 | --- | ---: | ---: |
+| 2026-11-28 03:15:41 | 165 | 9 |
 | 2026-11-27 09:39:32 | 156 | 8 |
 | 2026-11-26 17:33:00 | 148 | 3 |
 | 2026-11-26 03:40:57 | 145 | 5 |
@@ -33,13 +34,14 @@
 | 2026-11-21 16:21:28 | 126 | 2 |
 | 2026-11-21 02:00:38 | 124 | 1 |
 | 2026-11-20 16:27:41 | 123 | 2 |
-| 2026-11-20 08:06:04 | 121 | 0 |
 
 ## バージョン別
 
 | バージョン | ダウンロード数 | 状態 |
 | --- | ---: | --- |
-| [v0.21.3](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.3) | 2 | 公開中 |
+| [v0.21.5](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.5) | 4 | 公開中 |
+| [v0.21.4](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.4) | 2 | 公開中 |
+| [v0.21.3](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.3) | 5 | 公開中 |
 | [v0.21.2](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.2) | 4 | 公開中 |
 | [v0.21.1](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.1) | 4 | 公開中 |
 | [v0.21.0](https://github.com/dugite-git/FPSshogi-Releases/releases/tag/v0.21.0) | 6 | 公開中 |
